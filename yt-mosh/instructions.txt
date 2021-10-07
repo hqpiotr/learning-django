@@ -1,1 +1,2 @@
 pipenv install django // create virtual environment for the project.
+virtual environment: C:\Users\pcieslak\.virtualenvs\firstProject-Ig5Ny-Vu
