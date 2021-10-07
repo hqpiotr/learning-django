@@ -1,0 +1,1 @@
+pipenv install django // create virtual environment for the project.
