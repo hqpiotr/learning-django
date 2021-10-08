@@ -1,2 +1,28 @@
 pipenv install django // create virtual environment for the project.
-virtual environment: C:\Users\pcieslak\.virtualenvs\firstProject-Ig5Ny-Vu
+virtual environment:
+C:\Users\pcieslak\.virtualenvs\yt-mosh-rV7Mk5fV
+
+
+pipenv shell // launch virtual environment
+
+django-admin runserver // does not load... so
+python manage.py runserver
+
+change pipenv --venv path to interpreter...
+.. to the VS Code (instead of usual python:)
+- C:\Users\pcieslak\.virtualenvs\yt-mosh-rV7Mk5fV\bin\python
+
+new app added:
+$ python manage.py startapp playground
+
+then register it in "settings.py" of the main folder
+'playground'//under the apps
+
+Playground:
+- views: do the HTTP RESPONSE text in say_hello()
+- urls: import path, views. 
+	urlpatterns= [ path('hello/', views.say_hello)
+
+Main urls.py:
+- do the mapping to playground:
+	urlpatterns= [ path('playground/', include('playground.urls'))
